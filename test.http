@@ -1,0 +1,35 @@
+### Get request
+http://localhost:4004/wednesday/trainers
+
+### get single
+http://localhost:4004/wednesday/trainers/44790ed6-3892-4c58-8478-6926e500f1de
+
+### Create record
+POST http://localhost:4004/wednesday/trainers
+Content-Type: application/json
+
+{
+ "name": "BTP-Bootcamp",
+  "skill": "CAPM",
+  "trainer": "Abhijeet",
+  "location": "Virtual",
+  "room": "Zoom",
+  "trainee": null,
+  "duration": "6"   
+}
+
+
+### PUT record
+PATCH  http://localhost:4004/wednesday/trainers/44790ed6-3892-4c58-8478-6926e500f1de
+Content-Type: application/json
+
+{
+    "skill": "RAP"
+}
+
+### delete
+
+DELETE   http://localhost:4004/wednesday/trainers/44790ed6-3892-4c58-8478-6926e500f1de
+Content-Type: application/json
+
+{}
